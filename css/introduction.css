@@ -1,0 +1,24 @@
+.intro {
+  padding-top: 199px;
+}
+.intro__content {
+  background: rgba(240, 99, 184, 0.15);
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+}
+
+.intro__image {
+  margin-left: 11px;
+  margin-right: 62px;
+}
+
+.intro__text {
+  margin-right: 93px;
+}
+.intro__paragraph {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+}
