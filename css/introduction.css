@@ -22,3 +22,29 @@
   font-size: 18px;
   line-height: 160%;
 }
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding-top: 50px;
+  }
+
+  .intro__content {
+    background: none;
+  }
+
+  .intro__text {
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 3.125rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__paragraph {
+    padding: 0px 15px;
+  }
+
+  .intro__image {
+    display: none;
+    margin-left: auto;
+  }
+}
