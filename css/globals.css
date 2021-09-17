@@ -1,31 +1,12 @@
-@media screen and (max-width: 768px) {
-  :root {
-    font-size: 10px;
-  }
-}
-
 body {
   font-family: Avenir, sans-serif;
   color: #4b5d68;
   background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    text-align: center;
-  }
-}
-
 .container {
   margin: 0 auto;
   max-width: 1120px;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    margin: 0;
-    padding: 0px 20px;
-  }
 }
 
 li {
@@ -42,30 +23,25 @@ button {
   cursor: pointer;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: Arial, Helvetica, sans-serif;
   color: #212353;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 80px;
   font-weight: 700;
   line-height: 110%;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 700;
   line-height: 130%;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
   line-height: 130%;
 }
