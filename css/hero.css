@@ -1,0 +1,34 @@
+.hero {
+    position: relative;
+  }
+  
+  .hero__learn-more {
+    width: 170px;
+    background-color: #9c69e2;
+    border-radius: 50px;
+  
+    color: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 160%;
+    margin-top: 40px;
+  }
+  
+  .hero__paragraph {
+    width: 380px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+  
+  .hero__title {
+    width: 645px;
+  }
+  
+  .hero__image {
+    position: absolute;
+    right: -10%;
+    top: 25%;
+  }
