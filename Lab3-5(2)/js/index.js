@@ -38,13 +38,6 @@ let cameras = [
 ];
 let uid = 1;
 
-searchButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    let camerasFound = cameras.filter(
-        (camera) => camera.product.search(searchInput.value) !== -1);
-    renderItemsDOM(camerasFound);
-});
-
 sortCheckbox.addEventListener("click", () => {
     let camerasSorted = Array.from(cameras);
     if (sortCheckbox.checked) {
@@ -53,6 +46,13 @@ sortCheckbox.addEventListener("click", () => {
         );
     }
     renderItemsDOM(camerasSorted);
+});
+
+searchButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    let camerasFound = cameras.filter(
+        (camera) => camera.product.search(searchInput.value) !== -1);
+    renderItemsDOM(camerasFound);
 });
 
 countBtn.addEventListener("click", () => {

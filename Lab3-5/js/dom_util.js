@@ -7,7 +7,6 @@ const itemsContainer = document.getElementById("items_container");
 const itemMemory = document.getElementsByClassName("card-paragraph_1");
 const itemZoom = document.getElementsByClassName("card-paragraph_2");
 
-// local functions 
 const getItemId = (id) => `item-${id}`;
 
 const itemTemplate = ({ id, title, memory, zoom }) => `
@@ -26,7 +25,6 @@ const itemTemplate = ({ id, title, memory, zoom }) => `
     </li>
 `
 
-// exposed functions
 export const clearInputs = () => {
     titleInput.value = "";
     memoryInput.value = "";
