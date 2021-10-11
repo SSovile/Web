@@ -50,7 +50,7 @@ submitButton.addEventListener("click", (event) => {
   // Prevents default page reload on submit
   event.preventDefault();
 
-  const { title, memory, zoom } = getInputValues();
+  const { title, memory, zoom } = getInputValues();kmnj
 
   clearInputs();
 
