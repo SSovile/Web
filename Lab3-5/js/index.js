@@ -33,7 +33,7 @@ itemsSortDESC.addEventListener("click", (event) => {
 
 const addItem = ({ title, memory, zoom }) => {
   const generatedId = () => Math.random().toString(36).substr(2, 9);
-
+  console.log(title);
   const newItem = {
       id: generatedId,
       title,
@@ -80,5 +80,9 @@ cancelFindButton.addEventListener("click", (event) => {
   itemsCounter.innerHTML = `${cameras.length}`;
   findInput.value = "";
 });
+
+// var myselectfunction = (function () {
+//   return y * y/// IIFE
+// })
 
 renderItemsList(cameras);
