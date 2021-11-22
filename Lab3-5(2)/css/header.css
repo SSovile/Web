@@ -1,0 +1,26 @@
+.nav-title {
+    padding: 1px 2vw;
+}
+
+.navbar-brand{
+    padding-top: 3%;
+}
+
+.navbar {
+    background-color: ghostwhite;
+    padding: 0;
+    height: 80px;
+    
+}
+
+.nav-link{
+    background-color: ghostwhite;
+    border: whitesmoke;
+    height: 80px;
+}
+
+.nav-link:hover{
+    background-color: rgb(248, 248, 248);
+    border-radius: 90%;
+    text-shadow: 10ch
+}

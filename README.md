@@ -1,5 +1,5 @@
 # Web
-# Lab №1. Simple landing page
+# Lab №2. Simple landing page
 
 ## <b>Description:</b> Create a landing page following the given design (Figma).
 
@@ -11,6 +11,9 @@
 - All class names must not be meaningless (i.e. class=”myClass”) and should follow the same naming convention, preferably BEM, but you could come up with your own (just be consistent)
 - Basic cross-browser support (website should look correctly on last versions of modern browsers (Chrome, Safari, Edge)
 - For now, responsiveness is not required.
+- Add 3 animations.
+- Adapt to the mobile version
+- Add burger menu.
 
 ---
 
@@ -20,6 +23,11 @@
 
 ## Design
 https://www.figma.com/file/XT2jhcwmHBGxAjIBJsMnH0/LabWork1-V9
+
+---
+
+## Demo
+https://ssovile.github.io/Web/
 
 ---
 
@@ -34,4 +42,4 @@ https://www.figma.com/file/XT2jhcwmHBGxAjIBJsMnH0/LabWork1-V9
 2. Install the **npx** util by running the following command:
 ```
 $ npm i -g npx
-```# Web
+```

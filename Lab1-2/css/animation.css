@@ -1,0 +1,39 @@
+.footer__button__learn-more:hover {
+    opacity: 0.4;
+}
+
+.footer__buttons__messager:hover {
+    bottom: 5px;
+  }
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+.hero__learn-more:hover{
+  animation: bounce 1s;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.header__nav-item {
+  transition-duration: .25s;
+}
