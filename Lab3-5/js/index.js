@@ -47,7 +47,7 @@ const addItem = ({ title, memory, zoom }) => {
 };
 
 submitButton.addEventListener("click", (event) => {
-  // Prevents default page reload on submit
+  
   event.preventDefault();
 
   const { title, memory, zoom } = getInputValues();kmnj
@@ -81,8 +81,5 @@ cancelFindButton.addEventListener("click", (event) => {
   findInput.value = "";
 });
 
-// var myselectfunction = (function () {
-//   return y * y/// IIFE
-// })
 
 renderItemsList(cameras);
