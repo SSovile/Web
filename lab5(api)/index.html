@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
+        <div class="d-flex">
+            <a class="navbar-brand my-2">Camera Viewer</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button id="edit-button" class="nav-link py-3">All cameras</button>
+                </li>
+                <li class="nav-item">
+                    <button id="create-button" class="nav-link py-3">Create camera</button>
+                </li>
+            </ul>
+        </div>
+        <form class="form-inline d-flex nav_form">
+            <input class="form-control border-dark" type="search" placeholder="Canon" aria-label="Search"
+                id="search-input" />
+            <button class="btn btn-outline-primary mx-3" type="submit" id="search-button">
+                Find
+            </button>
+            <button class="btn btn-outline-danger" type="submit" id="search-button">
+                Clear
+            </button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 manager__main">
+                <h3 class="display-1 fs-3 fw-normal text-secondary text-center my-3">Manage cameras</h3>
+                <div class="manager__toggle">
+                    <p class="manager__toggle-label text-dark">Sort by memory</p>
+                    <label class="switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                      </label>
+                </div>
+                <hr />
+                <div class="manager__count">
+                    <p class="manager__count-label">Count total MB</p>
+                    <button type="button" class="btn btn-outline-primary fw-bold border-2" id="count">
+                        Count
+                    </button>
+                    <div class="manager__count-results hidden" id="count_results">
+                        <p class="manager__results-label">Total:</p>
+                        <div class="manager__results-result">
+                            <p id="count_total"> </p>
+                            <p> MB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="card-deck" id="card-deck"></div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div id="create-window" class="modal">
+            <div class="modal-create-window__content">
+                <div class="modal-create-window__header">
+                    <h3 class="display-1 fs-3 fw-normal text-dark text-center my-3">Create camera</h3>
+                    <span id="modal-close-button" class="modal__close-button">&times;</span>
+                </div>
+                <div class="modal-create-window__body">
+                    <form id="create-form" class="modal-create-window__body__form mt-4 mb-5">
+                        <label for="name">Product:</label>
+                        <input id="create-name-input" type="text" name="name" />
+                        <p id="create-name-input-error" class="error_text"></p>
+
+                        <label for="memory">Memory:</label>
+                        <input id="create-memory-input" type="text" name="memory" />
+                        <p id="create-memory-input-error" class="error_text"></p>
+
+                        <label for="zoom">zoom:</label>
+                        <input id="create-zoom-input" type="text" name="zoom" />
+                        <p id="create-zoom-input-error" class="error_text"></p>
+
+                        <button id="create-window-button"
+                            class="btn btn-outline-primary fw-bold border-2 mt-3">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="edit-window" class="modal">
+            <div class="modal-create-window__content">
+                <div class="modal-create-window__header">
+                    <h3 class="display-1 fs-3 fw-normal text-dark text-center my-3">Edit camera</h3>
+                    <span id="modal-edit-close-button" class="modal__close-button">&times;</span>
+                </div>
+                <div class="modal-create-window__body">
+                    <form id="edit-form" class="modal-create-window__body__form mt-4 mb-5">
+                        <label for="name">Product:</label>
+                        <input id="edit-name-input" type="text" name="name" />
+                        <p id="edit-name-input-error" class="error_text"></p>
+
+
+                        <label for="memory">Memory:</label>
+                        <input id="edit-memory-input" type="text" name="memory" />
+                        <p id="edit-memory-input-error" class="error_text"></p>
+
+                        <label for="zoom">zoom:</label>
+                        <input id="edit-zoom-input" type="text" name="zoom" />
+                        <p id="edit-zoom-input-error" class="error_text"></p>
+
+                        <button id="edit-window-button"
+                            class="btn btn-outline-primary fw-bold border-2 mt-3">Edit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
