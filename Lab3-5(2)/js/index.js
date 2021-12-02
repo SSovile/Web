@@ -81,7 +81,7 @@ createWindowButton.addEventListener("click", async () => {
         if (validateEdit()) {
             updateCamera(choosenCamera, getInputValues(inputEditProduct,
                 inputEditmemory, inputEditzoom, "edit-dropdown"))
-                .then(refetchAllShips);
+                .then(refetchAllCameras);
         }
     })
 
@@ -101,7 +101,7 @@ createWindowButton.addEventListener("click", async () => {
         }
     });
 
-    export const refetchAllShips = async () => {
+    export const refetchAllCameras = async () => {
         const allcamera = await getAllCameras();
         cameras = allCameras;
         renderItemsDOM(cameras);

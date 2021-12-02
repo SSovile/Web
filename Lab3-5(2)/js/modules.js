@@ -77,7 +77,7 @@ const renderEditButtons = () => {
 
 const renderDeleteButtons = () => {
     for (let camera of cameras) {
-        let deleteButton = document.getElementById(`delete-button-${ship.id}`)
+        let deleteButton = document.getElementById(`delete-button-${camera.id}`)
         deleteButton.addEventListener("click", () => {
             modalDeleteWindow.style.display = "block";
             choosenCamera = camera.id;
